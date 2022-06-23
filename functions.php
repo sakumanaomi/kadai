@@ -19,7 +19,7 @@ function check_session_id()
 {
   if(!isset($_SESSION['session_id']) || $_SESSION['session_id'] !=session_id()){
   //not Login
-  header('Location:todo_login.php');
+  header('Location:login.php');
   exit();
   }else{
   //Login
